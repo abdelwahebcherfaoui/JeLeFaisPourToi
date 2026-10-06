@@ -38,3 +38,7 @@ build/
 
 .claude/
 .vscode/
+
+mission-dz-web/node_modules/
+mission-dz-web/dist/
+
