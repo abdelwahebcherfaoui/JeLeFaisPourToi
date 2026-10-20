@@ -70,7 +70,7 @@ public class MissionController {
 
     @PostMapping("/{id}/confirm")
     @PreAuthorize("hasRole('CLIENT')")
-    public MissionResponse confirmMission(@PathVariable UUID id) {
+    public MissionResponse confirmMissionWithUUID(@PathVariable UUID id) {
         return missionService.confirmMission(id, CurrentUser.id());
     }
 
