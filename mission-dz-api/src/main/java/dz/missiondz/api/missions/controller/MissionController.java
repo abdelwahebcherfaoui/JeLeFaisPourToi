@@ -76,7 +76,7 @@ public class MissionController {
 
     @PostMapping("/{id}/assign")
     @PreAuthorize("hasRole('ADMIN')")
-    public MissionResponse assignExecutor(@PathVariable UUID id, @Valid @RequestBody AssignExecutorRequest request) {
+    public MissionResponse assignExecutorAdmin(@PathVariable UUID id, @Valid @RequestBody AssignExecutorRequest request) {
         return missionService.assignExecutor(id, request);
     }
 
