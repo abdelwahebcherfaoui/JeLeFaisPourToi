@@ -24,7 +24,7 @@ services:
       DB_PASSWORD: ${DB_PASSWORD:-missiondz}
       JWT_SECRET: ${JWT_SECRET:?la variable JWT_SECRET doit être définie (voir .env.example)}
     ports:
-      - "8080:8080"
+      - "${API_PORT:-8080}:8080"
     depends_on:
       postgres:
         condition: service_healthy
