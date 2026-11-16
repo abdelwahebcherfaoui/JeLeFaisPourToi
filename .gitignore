@@ -42,3 +42,6 @@ build/
 mission-dz-web/node_modules/
 mission-dz-web/dist/
 
+# Sauvegardes de base de données : jamais dans git
+backup*.sql
+*.dump
