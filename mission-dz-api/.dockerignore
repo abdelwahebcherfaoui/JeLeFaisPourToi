@@ -1,0 +1,12 @@
+target/
+bin/
+.idea/
+*.iml
+.vscode/
+.env
+.env.*
+postman/
+backup*.sql
+*.dump
+Dockerfile*
+docker-compose*.yml
