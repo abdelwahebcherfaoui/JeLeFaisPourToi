@@ -28,6 +28,14 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
+  web:
+    build: ../mission-dz-web
+    environment:
+      API_URL: http://api:8080
+    ports:
+      - "${WEB_PORT:-3000}:8080"
+    depends_on:
+      - api
 
 volumes:
   postgres-data:
