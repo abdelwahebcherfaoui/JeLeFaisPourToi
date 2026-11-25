@@ -1,0 +1,8 @@
+# Ce que Docker n'a pas besoin de recevoir pour construire l'image
+node_modules/
+dist/
+.env
+.env.*
+Dockerfile*
+.vscode/
+.idea/
